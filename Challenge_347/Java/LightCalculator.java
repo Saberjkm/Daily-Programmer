@@ -1,5 +1,6 @@
 import java.util.BitSet;
 import java.lang.Math;
+
 public class LightCalculator{
     private static int[][] inputOne = {
         {2,4},
@@ -40,6 +41,7 @@ public class LightCalculator{
         System.out.println(calculateTimeOn(inputThree));
     }
 
+    // Works by making a bit set of all the avaliable time slots then it sets them when the specific time slot is used.
     public static int calculateTimeOn(int[][] timeFrames){
         BitSet finalTimeFrame = new BitSet();
         for (int[] frame : timeFrames){
