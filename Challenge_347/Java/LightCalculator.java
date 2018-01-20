@@ -47,7 +47,7 @@ public class LightCalculator{
         for (int[] frame : timeFrames){
             // Gets the max amount of time slots needed for this specific frame
             BitSet tempFrame = new BitSet(Math.max(frame[0],frame[1]));
-            // Set hours the light is on for the this current time frame
+            // Set hours the light is on for this current time frame
             for (int i = Math.min(frame[0],frame[1]) + 1; i <= Math.max(frame[0],frame[1]); i++){
                 tempFrame.set(i);
             }
